@@ -248,13 +248,62 @@
                             readable content of a page when looking at its layout.</small></p>
                 </div>
                 <div class="col-md-4 d-flex justify-content-evenly">
-                    <button class="btn btn-light text-primary">Register Now</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Register Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Please Register Your Account</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputName" class="form-label">Your Name</label>
+                                            <input type="text" class="form-control" id="exampleInputName"
+                                                aria-describedby="Name">
+                                            <div id="Name" class="form-text">We'll never share your Name with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Ready to Join Bonus Section End -->
         <!--  Frequently Asked Questions Section Start -->
-        <section class="my-5 container ">
+        <section class="my-5 container">
             <div class="text-center">
                 <h1>Frequently Asked Questions</h1>
                 <p class="text-muted">It is a long established fact that a reader will be distracted by the readable
@@ -263,14 +312,47 @@
             <div>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-capitalize" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                what is a semantic tag in html ?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>What is HTML Semantics?</strong>
+                                    The core characteristic of a semantic element is that it clearly communicated
+                                    its meaning to both the developer and the browser. These elements clearly define
+                                    its content.</p>
+                                <strong>HTML Semantic Tag Structure</strong>
+
+                                <li>
+                                    [header]: It defines a header for a web page.
+                                </li>
+                                <li>[nav]: It defines a container for navigation links.</li>
+                                <li>
+                                    [main]: This specifies the main page content and should be unique.
+                                </li>
+                                <li>[section]: This defines a section in a web page.</li>
+                                <li>[article]: This element contains the main part, containing information about the web
+                                    page.</li>
+                                <li>[aside]: The content is often placed as a sidebar in a document.</li>
+                                <li>
+                                    [footer]: It defines a footer for a document or a section.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed text-capitalize" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
                                 bootstrap and tailwind difference ?
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                             data-bs-parent="#accordionExample">
                             <table class="table table-striped table-bordered">
                                 <thead>
@@ -301,46 +383,6 @@
                             </table>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Flexbox and Grid Difference ?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <table class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Property</th>
-                                            <th scope="col">Grid</th>
-                                            <th scope="col">Flexbox</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Dimension</td>
-                                            <td>Two - Dimensional</td>
-                                            <td>One - Dimensional</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Features</td>
-                                            <td>Can flex combination of items through space-occupying Features</td>
-                                            <td>Can push content element to extreme alignment</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Support Type</td>
-                                            <td>Layout First</td>
-                                            <td>Content First</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed text-capitalize" type="button"
@@ -379,32 +421,38 @@
                             <button class="accordion-button collapsed text-capitalize" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                 aria-controls="collapseFour">
-                                what is a semantic tag in html ?
+                                flexbox and grid difference
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p><strong>What is HTML Semantics?</strong>
-                                    The core characteristic of a semantic element is that it clearly communicated
-                                    its meaning to both the developer and the browser. These elements clearly define
-                                    its content.</p>
-                                <strong>HTML Semantic Tag Structure</strong>
-
-                                <li>
-                                    [header]: It defines a header for a web page.
-                                </li>
-                                <li>[nav]: It defines a container for navigation links.</li>
-                                <li>
-                                    [main]: This specifies the main page content and should be unique.
-                                </li>
-                                <li>[section]: This defines a section in a web page.</li>
-                                <li>[article]: This element contains the main part, containing information about the web
-                                    page.</li>
-                                <li>[aside]: The content is often placed as a sidebar in a document.</li>
-                                <li>
-                                    [footer]: It defines a footer for a document or a section.
-                                </li>
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Property</th>
+                                            <th scope="col">Grid</th>
+                                            <th scope="col">Flexbox</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Dimension</td>
+                                            <td>Two - Dimensional</td>
+                                            <td>One - Dimensional</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Features</td>
+                                            <td>Can flex combination of items through space-occupying Features</td>
+                                            <td>Can push content element to extreme alignment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Support Type</td>
+                                            <td>Layout First</td>
+                                            <td>Content First</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -412,9 +460,57 @@
             </div>
         </section>
         <!--  Frequently Asked Questions Section End -->
+        <!-- Trusted companies  Start-->
+        <section class="my-5 container d-none d-md-none d-lg-block">
+            <h1 class="text-dark text-center mb-5">Trusted by over 800+ companies</h1>
+            <div class="d-flex justify-content-evenly align-items-center">
+                <img src="images/company/company-1.png" alt="">
+                <img src="images/company/company-2.png" alt="">
+                <img src="images/company/company-3.png" alt="">
+                <img src="images/company/company-4.png" alt="">
+                <img src="images/company/company-5.png" alt="">
+                <img src="images/company/company-6.png" alt="">
+            </div>
+        </section>
+        <!-- Trusted companies  End-->
 
     </main>
 
+    <!-- Footer Section Start -->
+    <footer class="container footer-styles p-5">
+        <div class="text-center">
+            <div class="text-light">
+                <h1>Educating For The Future</h1>
+                <p>Office 41, Zawaya Buildin, Ghala Muscat,Sultanate of Oman</p>
+                <p>Privacy Ploicy | Terms of use</p>
+            </div>
+            <div class="text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.54ZM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M19.321 5.562a5.124 5.124 0 0 1-.443-.258a6.228 6.228 0 0 1-1.137-.966c-.849-.971-1.166-1.956-1.282-2.645h.004c-.097-.573-.057-.943-.05-.943h-3.865v14.943c0 .2 0 .399-.008.595c0 .024-.003.046-.004.073c0 .01 0 .022-.003.033v.009a3.28 3.28 0 0 1-1.65 2.604a3.226 3.226 0 0 1-1.6.422c-1.8 0-3.26-1.468-3.26-3.281c0-1.814 1.46-3.282 3.26-3.282c.341 0 .68.054 1.004.16l.005-3.936a7.178 7.178 0 0 0-5.532 1.62a7.583 7.583 0 0 0-1.655 2.04c-.163.281-.779 1.412-.853 3.246c-.047 1.04.266 2.12.415 2.565v.01c.093.262.457 1.158 1.049 1.913a7.856 7.856 0 0 0 1.674 1.58v-.01l.009.01c1.87 1.27 3.945 1.187 3.945 1.187c.359-.015 1.562 0 2.928-.647c1.515-.718 2.377-1.787 2.377-1.787a7.43 7.43 0 0 0 1.296-2.153c.35-.92.466-2.022.466-2.462V8.273c.047.028.672.441.672.441s.9.577 2.303.952c1.006.267 2.363.324 2.363.324V6.153c-.475.052-1.44-.098-2.429-.59Z" />
+                </svg>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
 
     <!-- bootstrap js link -->
