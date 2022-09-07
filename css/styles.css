@@ -1,0 +1,13 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Navbar Font Brand */
+.navbar-font {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(70, 70, 255) !important;
+}
+
+/* Carousel Images dark */
+.dark-cover-img {
+    filter: brightness(60%);
+}
